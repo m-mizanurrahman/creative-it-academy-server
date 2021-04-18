@@ -1,6 +1,12 @@
-LIVE LINK: https://powerful-lowlands-88233.herokuapp.com/
+WEBSITE NAME: "CREATIVE IT ACADEMY" 
 
-GITHUB CODE LINK: https://github.com/Porgramming-Hero-web-course/complete-website-server-mrahman96
+CLIENT SIDE LIVE LINK: https://a-assignment-11.web.app/
+
+SERVER SIDE LIVE LINK: https://powerful-lowlands-88233.herokuapp.com/
+
+CLIENT SIDE GITHUB CODE LINK:https://github.com/Porgramming-Hero-web-course/complete-website-client-mrahman96
+
+SERVER SIDE GITHUB CODE LINK: https://github.com/Porgramming-Hero-web-course/complete-website-server-mrahman96
 
 Features: 
             1. Clear Navigation,
@@ -26,4 +32,5 @@ Technology Used:
                     7. mongodb,
                     8. heroku,
                     9. github,
-                    10. firebase.
+                    10. firebase,
+                    11. MERN.
