@@ -108,13 +108,13 @@ client.connect(err => {
         const name = req.body.name;
         const email = req.body.email;
         console.log(name, email, file);
-        file.mv(`${__dirname}/admins/${file.name}`, err => {
-            if(err){
-                console.log(err);
-                return res.status(500).send({msg: 'Failed to upload Image'})
-            }
-            return res.send({name: file.name, path: `${file.name}`})
-        })
+        // file.mv(`${__dirname}/admins/${file.name}`, err => {
+        //     if(err){
+        //         console.log(err);
+        //         return res.status(500).send({msg: 'Failed to upload Image'})
+        //     }
+        //     return res.send({name: file.name, path: `${file.name}`})
+        // })
         const newImg = file.data;
         const encImg = newImg.toString('base64');
 
