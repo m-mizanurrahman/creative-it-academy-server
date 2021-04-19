@@ -27,6 +27,7 @@ client.connect(err => {
     const orderCollection = client.db("assignment-11").collection("orders");
     const reviewCollection = client.db("assignment-11").collection("reviews");
     const adminCollection = client.db("assignment-11").collection("admins");
+    const statusCollection = client.db("assignment-11").collection("status");
 
     app.get('/events', (req, res) => {
         eventCollection.find()
@@ -98,6 +99,14 @@ client.connect(err => {
     app.post('/addOrder', (req, res) => {
         const order = req.body;
         orderCollection.insertOne(order)
+            .then(result => {
+                res.send(result.insertedCount > 0)
+            })
+    })
+
+    app.post('/addStatus', (req, res) => {
+        const status = req.body;
+        statusCollection.insertOne(status)
             .then(result => {
                 res.send(result.insertedCount > 0)
             })
